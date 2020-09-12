@@ -1,0 +1,140 @@
+﻿$color: #585858;
+
+.shipping {
+  max-width: 800px;
+  min-width: 300px;
+  padding: 20px 15px 0 15px;
+  margin: 0 auto;
+  &_form {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    .form {
+      font-size: 25px;
+      color: $color;
+      div{
+        display: flex;
+        align-items: center;
+        margin-bottom: 21px;
+        p {
+          width: 278px;
+        }
+        input {
+          width: 100%;
+          height: 32px;
+          margin-left: 20px;
+          border: 1px solid #c0c0c0;
+          border-radius: 3px;
+          color: $color;
+          padding-left: 10px;
+          box-sizing: border-box;
+        }
+        input:focus {
+          border: 1px solid #56d89b;
+          //color: green
+        }
+        .options {
+          width: 100%;
+          height: 37px;
+        }
+      }
+      div .gh {
+        display: block;
+        position: relative;
+        width: 100%;
+        margin: 0 0 0 14px;
+        button {
+          width: 100%;
+          height: 37px;
+          background: transparent;
+          border: 1px solid #c0c0c0;
+          border-radius: 3px;
+          text-align: inherit;
+          color: #585858;
+          position: relative;
+          cursor: pointer;
+        }
+        button::after {
+          content: '\25BC';
+          position: absolute;
+          right: 0;
+          margin-right: 10px;
+          color: #585858;
+        }
+        .option {
+          position: absolute;
+          display: none;
+          font-size: 15px;
+          width: 100%;
+          background-color: white;
+          color: #585858;
+          ul {
+            width: 100%;
+            li {
+              padding: 10px 0 10px 10px;
+              padding-left: 10px;
+              cursor: pointer;
+              border-bottom: 1px solid #c0c0c0;
+            }
+            li:hover {
+              background-color: #f3f3f3;
+            }
+          }
+        }
+        p {
+          width: 278px;
+        }
+      }
+      .button {
+        display: flex;
+        justify-content: flex-end;
+        button {
+          width: 100px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .shipping {
+    .shipping_form {
+      .form {
+        div{
+          display: block;
+          margin-bottom: 10px;
+          p {
+            width: 100%;
+            margin-bottom: 10px;
+          }
+          input {
+            height: 40px;
+            margin-left: 0px;
+          }
+        }
+        div .message {
+        }
+
+        div .gh {
+          margin: 0 0 0 0px;
+          position: relative;
+          button {
+            height: 45px;
+          }
+        }
+        .select_options {
+          .option {
+            font-size: 17px;
+            i {
+              padding: 20px 0 20px 10px;
+            }
+          }
+        }
+        .button button {
+          margin-top: 20px;
+        }
+      }
+    }
+  } 
+}

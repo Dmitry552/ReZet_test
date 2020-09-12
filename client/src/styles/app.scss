@@ -1,0 +1,14 @@
+﻿@import './reset.scss';
+
+@import './all.min.css';
+@import './fonts.scss';
+
+body {
+  margin: 0 auto;
+  font-family: "Releway", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  .basket {
+    background-color: #f8f8f800;
+    height: 100%;
+  }
+}

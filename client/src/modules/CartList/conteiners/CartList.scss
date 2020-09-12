@@ -1,0 +1,31 @@
+﻿.cartList {
+  max-width: 800px;
+  min-width: 300px;
+  padding: 20px 15px 0 15px;
+  margin: 0 auto;
+  .Buy {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+    .purchase {
+      width: 150px;
+      .full_cost {
+        font-size: 24px;
+        display: flex;
+        i {
+          margin-left: 10px;
+        }
+      }
+      .buy {
+        margin-top: 10px;
+        width: 100%;
+        height: 40px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+
+}

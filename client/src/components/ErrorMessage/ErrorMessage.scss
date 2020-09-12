@@ -1,0 +1,12 @@
+﻿div .message {
+  width: 0px;
+  height: 100%;
+  position: relative;
+  .message p {
+    position: absolute;
+    font-size: 12px;
+    color: red;
+    left: -300px;
+    top: 30px;
+  }
+} 
